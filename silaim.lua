@@ -12,9 +12,9 @@ local CurrentCamera = Workspace.CurrentCamera
 
 local DaHoodSettings = {
     SilentAim = true,
-    AimLock = false,
-    Prediction = 0.14,
-    AimLockKeybind = Enum.KeyCode.E
+    AutoPrediction = true
+    AimLock = true,
+    AimLockKeybind = Enum.KeyCode.Q
 }
 getgenv().DaHoodSettings = DaHoodSettings
 
@@ -64,23 +64,23 @@ if getgenv().AutoPrediction == true then
     local split = string.split(pingvalue,'(')
     local ping = tonumber(split[1])
     if ping < 130 then
-        getgenv().Prediction = 0.151
+        getgenv().Prediction = 0.130340
     elseif ping < 125 then
-        getgenv().Prediction = 0.149
+        getgenv().Prediction = 0.130340
     elseif ping < 110 then
-        getgenv().Prediction = 0.146
+        getgenv().Prediction = 0.130340
     elseif ping < 105 then
-        getgenv().Prediction = 0.138
+        getgenv().Prediction = 0.130340
     elseif ping < 90 then
-        getgenv().Prediction = 0.136
+        getgenv().Prediction = 0.130340
     elseif ping < 80 then
-        getgenv().Prediction = 0.134
+        getgenv().Prediction = 0.1347
     elseif ping < 70 then
-        getgenv().Prediction = 0.131
+        getgenv().Prediction = 0.1347
     elseif ping < 60 then
-        getgenv().Prediction = 0.1229
+        getgenv().Prediction = 0.141
     elseif ping < 50 then
-        getgenv().Prediction = 0.1225
+        getgenv().Prediction = 0.141
     elseif ping < 40 then
         getgenv().Prediction = 0.1256
     end
