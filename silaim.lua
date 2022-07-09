@@ -76,10 +76,10 @@ if getgenv().AutoPrediction == true then
     elseif ping < 70 then
         getgenv().Prediction = 0.1347
     elseif ping < 60 then
-        getgenv().Prediction = 0.141
+        getgenv().Prediction = 0.125
     elseif ping < 50 then
-        getgenv().Prediction = 0.141
+        getgenv().Prediction = 0.125
     elseif ping < 40 then
-        getgenv().Prediction = 0.1256
+        getgenv().Prediction = 0.1345
     end
 end
